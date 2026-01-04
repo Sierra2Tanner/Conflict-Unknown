@@ -1,0 +1,55 @@
+Marines : Good against Infantry, Yellow against Vehicles and Air
+Jumpjets : Good against Vehicles, yellow against infantry and Air
+Hellbringers : Good against Infantry, bad against Air, bad against vehicles
+Cyclops : Good against vehicles and aircraft, bad against infantry
+Sniper : Good against infantry, yellow against air, bad against vehicle
+
+Jackrabbit : yellow against infantry, bad against vehicle, bad against air
+Warthog : yellow against infantry, yellow against vehicle, yellow against air
+Mantis : good against infantry, bad against vehicle, good against air
+Flamehog : good against infantry, bad against air, yellow against vehicle
+Gausshog : good against vehicle, yellow against infantry, yellow against air
+Rockethog : good against air, yellow against vehicle, bad against infantry
+Ghost : yellow against infantry, yellow against vehicle, yellow against air
+Brutechopper : good against vehicle, yellow against infantry, bad against air
+Spectre : good against vehicle, yellow against infantry, yellow against air
+Revenant : good against vehicle, bad against air, good against infantry
+Marauder : good against vehicle, bad against air, good against infantry
+
+Scorpion : Good against Infantry, Yellow against vehicles, bad against air
+Colossus : bad against infantry, good against vehicles, yellow against air
+Stealth Scorpion : good against vehicle, yellow against infantry, yellow against air
+Grizzly : yellow against vehicles, good against infantry, yellow against air
+Wolverine : Good against Air, bad against infantry, bad against air, cheap
+Sundevil : good against air, good against infantry, bad against vehicle
+Kodiak : yellow against vehicle, bad against air, yellow against infantry, artillery
+Rhino : good against vehicle, yellow against air, bad against infantry, artillery
+Cobra : good against vehicle, bad against air, bad against infantry
+Gremlin : bad against all, support
+Mastadon : all yellow, can transport 4 infantry squads, upgrade grants total 6 slots. 
+Cougar : infantry yellow, rest red, can transport 3 infantry squads with a max of 4.
+
+Wraith : good against infantry, yellow against vehicles, bad against air
+Wraith Invader : good against infantry, bad against vehicles, yellow against air, transport infantry
+
+
+Hornet : good against infantry, bad against vehicle, bad against air
+Banshee: good against infantry, bad against vehicle, bad against air
+Blisterback : good against infantry, good against air, yellow against vehicle, artillery
+Shroud : bad against all, support
+Vulture gunship : good against infantry, good against vehicle bad against air
+Pelican gunship : good against air, yellow against vehicle, yellow against infantry
+Sparrowhawk : good against vehicle, good against air, bad against infantry
+Pelican : all yellow, can transport vehicles and infantry
+Phantom : all yellow, can transport vehicles and infantry
+
+Builder Condor
+Builder Lich
+
+Anti Air Turret : Can only target air
+Anti vehicle turret : can only target vehicles
+anti infantry : do i need to spell it out?
+regular turret : Yellow against all
+Siege turret : yellow against vehicles, yellow against air, bad against infantry, artillery
+
+

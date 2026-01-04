@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultmodel="mantis01">
+	<model name="mantis01">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_mantis01</file>
+				<damagefile>dlc3/pack1/units/unsc/vehicles/mantis01/legs</damagefile>
+			</asset>
+			<attach type="ModelRef" name="body_0" tobone="socketbone_body_0" frombone="GrannyRootBone_body_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<point pointType="Board" bone="bone_hijack_0" pointData="Metal" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_main01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Transition" tweenTime="15" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_main01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idle04_main</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Combat_Idle_main03</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.215000004" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Clank" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.632000029" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Clank" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.957000017" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_main01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="UpgradeAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_main02</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0429999828" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.847000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.907999992" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="WalkUpgradeAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.128999993" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.135000005" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.189999998" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.257999986" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.374000013" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.509000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.609000027" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.632000029" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.686999977" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.760999978" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.86500001" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.925999999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="WalkAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0549999997" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.135000005" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.252000004" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.337000012" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.558000028" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.609000027" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.754999995" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.847000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Cower" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_cower01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.485000014" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Knockdown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_knockdown_main01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.202000007" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.282000005" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.465999991" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.577000022" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.649999976" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.730000019" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_flail01_main</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_stun_main01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/MediumElectricalArc" tobone="bone_vfx_StunPoint1" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ParticleFile" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/MediumElectricalArc" tobone="bone_vfx_StunPoint2" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_death_main_01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_MantisAnimDeath01" tobone="GrannyRootBone_mantis01" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.0189999994" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="bone_vfx_Explosion1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="AdvancedCameraShake" start="0" position_type="Time" position="0.0189999994" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.00999999978" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.00999999978" fadeOutTime="0.899999976" translationStrength="0.5" translationFrequency="1.10000002" yawPitchStrength="3" rollStrength="2" rotationFrequency="3.5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0370000005" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.199000001" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="bone_vfx_Explosion2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="AdvancedCameraShake" start="0" position_type="Time" position="0.199000001" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.00999999978" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.00999999978" fadeOutTime="0.899999976" translationStrength="0.5" translationFrequency="1.10000002" yawPitchStrength="1.5" rollStrength="1" rotationFrequency="3.5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.583000004" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_knee_left_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" removeimmediately="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.596000016" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_StunPoint1" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" removeimmediately="false" force="0" force2="0" lifespan="5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="AdvancedCameraShake" start="0" position_type="Time" position="0.628000021" end="1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.00999999978" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.00999999978" fadeOutTime="0.899999976" translationStrength="0.349999994" translationFrequency="1.10000002" yawPitchStrength="1" rollStrength="0.75" rotationFrequency="3.5" />
+			</asset>
+		</anim>
+		<anim type="GuassAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_main01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassWalkAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0549999997" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.135000005" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.252000004" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.337000012" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.558000028" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.609000027" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.754999995" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.847000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="TurnLeft" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_turn_left_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.195999995" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.595000029" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.760999978" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="TurnRight" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_turn_right_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.263999999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.300999999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.472000003" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.699000001" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.839999974" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0489999987" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.159999996" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0370000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.165999994" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.257999986" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0799999982" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.245000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0429999828" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.485000014" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.822000027" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.270000011" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.324999988" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.345999986" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.460000008" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.773000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.815999985" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.839999974" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.963" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="JogIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0489999987" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.159999996" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0799999982" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.245000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0799999982" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.245000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Transition" tweenTime="15" tweenToAnimation="Jog" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0429999828" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.485000014" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.822000027" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.263999999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.324999988" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.345999986" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.460000008" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.773000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.815999985" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.839999974" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.963" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="RunIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0489999987" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.159999996" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0799999982" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.245000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0799999982" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.147" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.245000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="IdleRun" exitAction="Transition" tweenTime="15" tweenToAnimation="Run" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_mantis</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0429999828" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.460000008" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.822000027" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_main</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.263999999" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.324999988" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.345999986" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.460000008" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.773000002" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.815999985" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.839999974" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.963" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="StandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_main02_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkStandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_main_small</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.128999993" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.135000005" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_LeftFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.189999998" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.257999986" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.374000013" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.42899999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.509000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="TerrainEffect" start="0" position_type="Time" position="0.609000027" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFoot" tobone="bone_vfx_RightFoot" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.632000029" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.686999977" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.760999978" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.86500001" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.925999999" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_RightFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/GorgonFootTrail" tobone="bone_vfx_LeftFoot" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_in</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.0670000017" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.141000003" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.252000004" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.405000001" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.754999995" end="1" name="PLAY_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_grizzly01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_loop</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="AnimStateExit" position="0" end="1" name="STOP_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_grizzly01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0859999657" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.141000003" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.226999998" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.307000011" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.551999986" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.612999976" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.638000011" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.950999975" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_FootstepIdle" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+	</model>
+	<model name="body_0">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_body_0</file>
+				<damagefile />
+			</asset>
+			<attach type="ModelRef" name="laser_base_0" tobone="socketbone_laser_base_0" frombone="GrannyRootBone_laser_base_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="vfx/dlc3/Units/MantisCameraLight" tobone="bone_vfx_CameraPoint" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="rocket_launcher" tobone="socketbone_hand_left_0" frombone="GrannyRootBone_hand_left_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="machine_gun" tobone="socketbone_hand_right_0" frombone="GrannyRootBone_hand_right_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="rocket_launcher_upgrade" tobone="socketbone_hand_left_0" frombone="GrannyRootBone_hand_left_upgrade_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_body01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Transition" tweenTime="15" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_body01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idle04_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Combat_Idle_body03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_body01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="UpgradeAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_body02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkUpgradeAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cower" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_cower01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_flail01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_stun_body01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_death_body_01</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.860000014" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="bone_hand_left_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.860000014" end="1" name="PLAY_SFX_3D_VEH_UNSC_MantisAnimDeathExplosionFlurry" tobone="GrannyRootBone_body_0" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.899999976" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCVehicleExplosionSmall" tobone="bone_hand_right_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.980000019" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionMedium" tobone="bone_body_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="true" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="GuassAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_body01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassWalkAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TurnLeft" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_turn_left_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TurnRight" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_turn_right_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="JogIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Transition" tweenTime="15" tweenToAnimation="Jog" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RunIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_body</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleRun" exitAction="Transition" tweenTime="15" tweenToAnimation="Run" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Knockdown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_knockdown_body01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.202000007" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.282000005" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.465999991" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.577000022" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.649999976" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.730000019" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="StandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_body02_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkStandardRocket" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_body_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_body_in</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_body_loop</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="laser_base_0">
+		<component>
+			<logic type="Tech">
+				<logicdata value="rosterMode" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_base_0</file>
+					</asset>
+				</logicdata>
+				<logicdata value="unsc_mantis_upgrade2" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_base_0</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_base_0</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_base_0</file>
+			</asset>
+			<attach type="ModelRef" name="laser_0" tobone="socketbone_laser_0" frombone="GrannyRootBone_laser_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_laser_base01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Transition" tweenTime="15" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_laser_base01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idle04_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Combat_Idle_laser_base03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser_base01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="UpgradeAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser_base02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkUpgradeAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cower" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_cower01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_flail01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_stun_base_laser01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_death_laser_base_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser_base01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassWalkAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser_base01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Transition" tweenTime="15" tweenToAnimation="Jog" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="JogIdle" exitAction="Transition" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleRun" exitAction="Transition" tweenTime="15" tweenToAnimation="Run" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RunIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser_base</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Knockdown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_knockdown_laser_base01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.202000007" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.282000005" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.465999991" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.577000022" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.649999976" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.730000019" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="StandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser_base02_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkStandardRocket" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_laser_base</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_laser_base_in</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_laser_base_loop</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="laser_0">
+		<component>
+			<logic type="Tech">
+				<logicdata value="rosterMode" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_0</file>
+					</asset>
+				</logicdata>
+				<logicdata value="unsc_mantis_upgrade2" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_0</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_0</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_laser_0</file>
+				<damagefile />
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_laser01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Transition" tweenTime="15" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Idle_laser01</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idle04_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_Combat_Idle_laser03</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="UpgradeAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser02</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkUpgradeAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cower" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_cower01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Flail" exitAction="Loop" tweenTime="15" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_flail01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="15" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_stun_laser01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_death_laser_01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassAttack" exitAction="Transition" tweenTime="0" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="GuassWalkAttack" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="LaserAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0" end="1" tobone="bone_vfx_LaserPoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_WPN_UNSC_CyroBisonShellLaunch" tobone="bone_vfx_LaserPoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitWeaponVFX/SharedMuzzleVFX/CyclopsEMPCannonMuzzle" tobone="bone_vfx_LaserPoint" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" outliveAnimation="true" force="0" force2="0" lifespan="0.349999994" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleWalk" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Transition" tweenTime="15" tweenToAnimation="Jog" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="JogIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="5" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleRun" exitAction="Transition" tweenTime="15" tweenToAnimation="Run" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idlewalk01_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="RunIdle" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle01_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle02_laser</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walkidle03_laser</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Knockdown" exitAction="Transition" tweenTime="5" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_knockdown_laser01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0.123000003" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.202000007" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.282000005" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.442000002" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.465999991" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Hydraulics" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.577000022" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.649999976" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_Servo" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.730000019" end="1" name="PLAY_SFX_3D_VEH_UNSC_Mantis_Footstep" tobone="GrannyRootBone_mantis01" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="StandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_laser02_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="WalkStandardRocket" exitAction="Transition" tweenTime="15" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_laser_small</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_laser_in</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/spartan_hijack_mantis_laser_loop</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="rocket_launcher_upgrade">
+		<component>
+			<logic type="Tech">
+				<logicdata value="rosterMode" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_upgrade_0</file>
+						<damagefile>dlc3/pack1/units/unsc/vehicles/mantis01/rocket_launcher_upgrade</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="unsc_mantis_upgrade1" modelref="rocket_launcher_upgrade" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_upgrade_0</file>
+						<damagefile>dlc3/pack1/units/unsc/vehicles/mantis01/rocket_launcher_upgrade</damagefile>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc/infantry/marine_01/nothing_01</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_upgrade_0</file>
+				<damagefile />
+			</asset>
+		</component>
+		<anim type="UpgradeAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_hand_left02</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.00600000005" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.00600000005" end="1" tobone="bone_rocket_left_end_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.289999992" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.289999992" end="1" tobone="bone_rocket_left_end_upgrade_2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.289999992" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.519999981" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle3" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.519999981" end="1" tobone="bone_rocket_left_end_upgrade_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.519999981" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.790000021" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle4" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.790000021" end="1" tobone="bone_rocket_left_end_3_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.790000021" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_3_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="1" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_MissileReload" tobone="GrannyRootBone_hand_left_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="WalkUpgradeAttack" exitAction="Transition" tweenTime="5" tweenToAnimation="Walk" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_hand_left</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.00600000005" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.00600000005" end="1" tobone="bone_rocket_left_end_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.289999992" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.289999992" end="1" tobone="bone_rocket_left_end_upgrade_2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.289999992" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_2" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.519999981" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle3" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.519999981" end="1" tobone="bone_rocket_left_end_upgrade_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.519999981" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_upgrade_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.790000021" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle4" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.790000021" end="1" tobone="bone_rocket_left_end_3_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.790000021" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_3_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.878000021" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_MissileReload" tobone="GrannyRootBone_hand_left_upgrade_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+	</model>
+	<model name="machine_gun">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_right_0</file>
+				<damagefile>dlc3/pack1/units/unsc/vehicles/mantis01/machine_gun</damagefile>
+			</asset>
+			<attach type="ModelRef" name="cryothrower" tobone="bone_gun_barrel_0" frombone="GrannyRootBone_flamethrower01" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Attack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_hand_right01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0" end="1" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="WalkAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack01_hand_right</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0" end="1" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="GuassAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_hand_right01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0" end="1" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0" end="1" name="vfx/dlc3/Units/MantisGuassMuzzle" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="1.5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="GuassWalkAttack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_hand_right01</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0" end="1" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0" end="1" name="vfx/dlc3/Units/MantisGuassMuzzle" tobone="bone_vfx_ChainGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="1.5" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+	</model>
+	<model name="rocket_launcher">
+		<component>
+			<logic type="Tech">
+				<logicdata value="rosterMode" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc/infantry/marine_01/nothing_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="unsc_mantis_upgrade1" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>unsc/infantry/marine_01/nothing_01</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_0</file>
+						<damagefile>dlc3/pack1/units/unsc/vehicles/mantis01/rocket_launcher</damagefile>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_0</file>
+				<damagefile />
+			</asset>
+		</component>
+		<anim type="StandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_attack_hand_left02_small</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.00600000005" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle5" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.00600000005" end="1" tobone="bone_rocket_left_end_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.49000001" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle6" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.49000001" end="1" tobone="bone_rocket_left_end_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.49000001" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.899999976" end="1" name="PLAY_SFX_3D_FLY_UNSC_Mantis_MissileReload" tobone="GrannyRootBone_hand_left_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="WalkStandardRocket" exitAction="Transition" tweenTime="5" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_walk_attack02_hand_left_small</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.00600000005" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle5" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.00600000005" end="1" tobone="bone_rocket_left_end_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.00600000005" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.479999989" end="1" name="vfx/dlc3/Units/MantisMissileMuzzle" tobone="bone_vfx_MissileMuzzle6" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="4" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.479999989" end="1" tobone="bone_rocket_left_end_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.479999989" end="1" name="PLAY_SFX_3D_WPN_UNSC_DLC3_Mantis_Missile_Pod" tobone="bone_rocket_left_end_1" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+	</model>
+	<model name="cryothrower">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/weapons/flamethrower01/mesh_flamethrower01</file>
+			</asset>
+			<attach type="ParticleFile" name="vfx/UnitVFX/MiscUnitVFX/CryoPilotFlameBlue" tobone="bone_vfx_FlameThrowerPilotPoint" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</component>
+	</model>
+</visual>

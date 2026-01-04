@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultmodel="pelican01">
+	<model name="pelican01">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units\unsc\aerial\pelican01\mesh_pelican01</file>
+			</asset>
+			<attach type="ModelRef" name="horet" tobone="socketbone_gun_turret_01" frombone="GrannyRootBone_gun_turret_01" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitWhiteLightLarge" tobone="bone_vfx_left_frontwing_light02" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitWhiteLightLarge" tobone="bone_vfx_right_frontwing_light02" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitGreenLightLarge" tobone="bone_vfx_right_frontwing_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitGreenLightLarge" tobone="bone_vfx_right_rearwing_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitRedLightLarge" tobone="bone_vfx_left_frontwing_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitRedLightLarge" tobone="bone_vfx_left_rearwing_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitWhiteLightLarge" tobone="bone_vfx_bottom_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/AirUnitWhiteLightLarge" tobone="bone_vfx_rear_light01" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="20" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>modded/animations/unsc/hawk01/mesh_pelica_hawk_hover_idle01</file>
+				<weight>0</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/Generic/PelicanDropOffDust" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="20" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>modded/animations/unsc/hawk01/mesh_pelica_hawk_hover_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="20" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>modded/animations/unsc/hawk01/mesh_pelica_hawk_hover_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="20" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>modded/animations/unsc/hawk01/mesh_pelica_hawk_hover_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/aerial/pelican01/mesh_gun_turret_01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="horet">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/aerial/hornet01/mesh_hornet01</file>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="20" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>modded/animations/unsc/hawk01/mesh_horet_hawk01_idle01</file>
+				<weight>0</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/Generic/PelicanDropOffDust" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="60" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+	</model>
+</visual>

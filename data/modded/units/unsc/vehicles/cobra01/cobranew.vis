@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<visual xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultmodel="battle_apc">
+	<model name="battle_apc">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>episode2\pack1\units\flood\vehicles\floodbattle_apc01\mesh_battle_apc</file>
+				<damagefile>dlc2/pack1/units/unsc/vehicles/battle_apc/battle_apc</damagefile>
+			</asset>
+			<attach type="ModelRef" name="armleft" tobone="socketbone_wheel_01_right" frombone="GrannyRootBone_mud_guard_right_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="armright" tobone="socketbone_wheel_01_left" frombone="GrannyRootBone_mud_guard_left_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wolverine" tobone="bone_root" frombone="bone_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="mantis_decor" tobone="socketbone_wheel_01_left" frombone="socketbone_hand_left_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="mantis_decor" tobone="socketbone_wheel_01_right" frombone="socketbone_hand_right_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="hog_chassis" tobone="socketbone_wheel_03_left" frombone="socketbone_wheel_back_left" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="hog_chassis" tobone="socketbone_wheel_03_right" frombone="socketbone_wheel_back_right" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_02" tobone="socketbone_wheel_03_left" frombone="GrannyRootBone_wheel_03_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_02" tobone="socketbone_wheel_03_right" frombone="GrannyRootBone_wheel_03_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_01" tobone="socketbone_wheel_02_left" frombone="GrannyRootBone_wheel_02_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_01" tobone="socketbone_wheel_02_right" frombone="GrannyRootBone_wheel_02_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_03" tobone="socketbone_wheel_01_left" frombone="GrannyRootBone_wheel_01_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_03" tobone="socketbone_wheel_01_right" frombone="GrannyRootBone_wheel_01_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/scorpion_body" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<point pointType="Board" bone="bone_hijack_0" pointData="Metal" />
+		</component>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="0" tweenToAnimation="DoorOpenIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>vfx/effects/fx_dummy_threeseconds</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_FoxcannonDeplyAnim" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="LightFile" name="Lights/WarningLight" tobone="bone_vfx_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ParticleFile" name="vfx/UnitVFX/MiscUnitVFX/WarningLight" tobone="bone_vfx_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>vfx/effects/fx_dummy_threeseconds</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_FoxcannonPackUpAnim" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="LightFile" name="Lights/WarningLight" tobone="bone_vfx_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ParticleFile" name="vfx/UnitVFX/MiscUnitVFX/WarningLight" tobone="bone_vfx_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="DoorOpenIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_open_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Transition" tweenTime="0" tweenToAnimation="AttackExit" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_attack01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_spartan_hijack_in01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_SpartanHijackSkid" tobone="GrannyRootBone_battle_apc" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.722000003" end="1" name="PLAY_SFX_3D_VEH_SpartanHijackSkid" tobone="GrannyRootBone_battle_apc" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_spartan_hijack_loop01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="AnimStateExit" position="0" end="1" name="STOP_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+	</model>
+	<model name="turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/structure/turret_antivehicle_gun01/deployed/mesh_turret_0</file>
+				<damagefile>units/unsc/structure/turret_antivehicle_gun01/deployed/antivehicle_turret</damagefile>
+			</asset>
+			<attach type="ModelRef" name="Cannon" tobone="socketbone_cannon_0" frombone="GrannyRootBone_cannon_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="turret_addon" tobone="GranRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/attack_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="turret_addon">
+		<component>
+			<logic type="Tech">
+				<logicdata value="unsc_cobraupgrade_pierceshot" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>units/unsc/vehicles/grizzly01/mesh_turret</file>
+					</asset>
+				</logicdata>
+				<logicdata value="" modelref="" weight="1">
+					<asset type="Model">
+						<uvOffset channel="0" uOfs="0" vOfs="0" />
+						<uvOffset channel="1" uOfs="0" vOfs="0" />
+						<uvOffset channel="2" uOfs="0" vOfs="0" />
+						<file>units/unsc/vehicles/scorpion01/mesh_turret</file>
+					</asset>
+				</logicdata>
+			</logic>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/vehicles/scorpion01/mesh_turret</file>
+			</asset>
+		</component>	
+	</model>
+	<model name="Cannon">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/structure/turret_antivehicle_gun01/deployed/mesh_cannon_0</file>
+				<damagefile>units/unsc/structure/turret_antivehicle_gun01/deployed/antivehicle_gun</damagefile>
+			</asset>
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_cannon</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/attack_01_cannon</file>
+				<weight>1</weight>
+				<tag type="Attack" start="0" position_type="Time" position="0.0560000017" end="1" tobone="bone_barrel_right_end" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0599999987" end="1" name="Play_SFX_3D_BLD_UNSC_TurretVehicleGunRecoil" tobone="GrannyRootBone_cannon_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.0599999987" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitWeaponVFX/SharedMuzzleVFX/RailGunMuzzle" tobone="bone_barrel_right_end" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0599999987" end="1" name="Play_SFX_3D_WPN_UNSC_TurretAntiVehicle_Fire" tobone="GrannyRootBone_cannon_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.165000007" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitWeaponVFX/SharedMuzzleVFX/RailGunMuzzle" tobone="bone_barrel_left_end" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="2" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.165000007" end="1" tobone="bone_barrel_left_end" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.165000007" end="1" name="Play_SFX_3D_WPN_UNSC_TurretAntiVehicle_Fire" tobone="GrannyRootBone_cannon_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.165000007" end="1" name="Play_SFX_3D_BLD_UNSC_TurretVehicleGunRecoil" tobone="GrannyRootBone_cannon_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deploying/deploy_01_cannon</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_standard_gun01/deploying/incoming_idle01_cannon</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_cannon</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_left_01">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_01_left</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_01_left_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_01_left_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_left_02">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_02_left</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_02_left_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_02_left_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_left_03">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_03_left</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_03_left_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_03_left_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_right_03">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_03_right</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_03_right_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_03_right_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_right_02">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_02_right</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_02_right_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_02_right_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="wheel_right_01">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc2/pack1/units/unsc/vehicles/battle_apc/mesh_wheel_01_right</file>
+			</asset>
+		</component>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_01_right_spartan_hijack_in01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/wheel_01_right_spartan_hijack_loop01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="hog_chassis">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units\unsc\vehicles\warthog01\mesh_warthog01</file>
+				<damagefile>units\unsc\vehicles\warthog01\warthog01</damagefile>
+			</asset>
+			<attach type="LightFile" name="Lights/RearLight" tobone="bone_vfx_RearLightLeft" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="LightFile" name="Lights/RearLight" tobone="bone_vfx_RearLightRight" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="decor_turret" tobone="socketbone_turret_root" frombone="root" syncanims="false" disregardorient="false" removeimmediately="false" />
+        </component>
+     </model>
+	<model name="mantis_decor">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3\pack1\units\unsc\vehicles\mantis01\mesh_body_0</file>
+			</asset>
+        </component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/mantis01/mantis_idle04_body</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+     </model>
+	<model name="wolverine">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>episode2\pack1\units\flood\vehicles\floodwolverine01\mesh_wolverine01</file>
+			</asset>
+			<attach type="ModelRef" name="hoist" tobone="socketbone_turret" frombone="GrannyRootBone_turret" syncanims="true" disregardorient="false" removeimmediately="false" />
+        </component>
+     </model>
+	<model name="hoist">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/vehicles/wolverine01/mesh_turret</file>
+			</asset>
+			<attach type="ModelRef" name="Turret" tobone="socketbone_cannon" frombone="GrannyRootBone_cannon" syncanims="true" disregardorient="false" removeimmediately="false" />
+		</component>
+	</model>
+	<model name="Lockdown">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>episode2\pack1\units\flood\vehicles\floodbattle_apc01\mesh_battle_apc</file>
+				<damagefile>dlc2/pack1/units/unsc/vehicles/battle_apc/battle_apc</damagefile>
+			</asset>
+			<attach type="ModelRef" name="armleft" tobone="socketbone_wheel_01_right" frombone="GrannyRootBone_mud_guard_right_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="armright" tobone="socketbone_wheel_01_left" frombone="GrannyRootBone_mud_guard_left_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wolverine_LD" tobone="bone_root" frombone="bone_root" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="mantis_decor" tobone="socketbone_wheel_02_left" frombone="socketbone_hand_left_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="mantis_decor" tobone="socketbone_wheel_02_right" frombone="socketbone_hand_right_0" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="hog_chassis" tobone="socketbone_wheel_03_left" frombone="socketbone_wheel_back_left" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="hog_chassis" tobone="socketbone_wheel_03_right" frombone="socketbone_wheel_back_right" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_02" tobone="socketbone_wheel_03_left" frombone="GrannyRootBone_wheel_03_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_02" tobone="socketbone_wheel_03_right" frombone="GrannyRootBone_wheel_03_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_01" tobone="socketbone_wheel_02_left" frombone="GrannyRootBone_wheel_02_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_01" tobone="socketbone_wheel_02_right" frombone="GrannyRootBone_wheel_02_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_left_03" tobone="socketbone_wheel_01_left" frombone="GrannyRootBone_wheel_01_left" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="wheel_right_03" tobone="socketbone_wheel_01_right" frombone="GrannyRootBone_wheel_01_right" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/scorpion_body" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="FoliageForceFile" name="Foliage/warthog" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<point pointType="Board" bone="bone_hijack_0" pointData="Metal" />
+		</component>
+		<anim type="AnchorDown" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>vfx/effects/fx_dummy_threeseconds</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_FoxcannonDeplyAnim" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="AnchorUp" exitAction="Transition" tweenTime="0" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>vfx/effects/fx_dummy_threeseconds</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_UNSC_FoxcannonPackUpAnim" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_open_idle</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack_LD" exitAction="Transition" tweenTime="0" tweenToAnimation="AttackExit" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_attack01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_spartan_hijack_in01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VEH_SpartanHijackSkid" tobone="GrannyRootBone_battle_apc" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0" end="1" name="PLAY_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.722000003" end="1" name="PLAY_SFX_3D_VEH_SpartanHijackSkid" tobone="GrannyRootBone_battle_apc" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_spartan_hijack_loop01</file>
+				<weight>1</weight>
+				<tag type="Sound" start="0" position_type="AnimStateExit" position="0" end="1" name="STOP_SFX_3D_VFX_SpartanHijackEMPChargeLoop" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc2/pack1/animations/unsc/vehicles/battle_apc/battle_apc_idle01</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTail" tobone="GrannyRootBone_battle_apc" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirt" tobone="bone_vfx_RearRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFront" tobone="bone_vfx_MidRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontRightWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+			<attach type="TerrainEffect" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitTerrainVFX/TerrainEffectsFiles/FoxCannonTireDirtFrontGround" tobone="bone_vfx_FrontLeftWheel" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+	</model>
+	<model name="wolverine_LD">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>episode2\pack1\units\flood\vehicles\floodwolverine01\mesh_wolverine01</file>
+			</asset>
+			<attach type="ModelRef" name="hoist_LD" tobone="socketbone_turret" frombone="GrannyRootBone_turret" syncanims="true" disregardorient="false" removeimmediately="false" />
+        </component>
+     </model>
+	<model name="hoist_LD">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/vehicles/wolverine01/mesh_turret</file>
+			</asset>
+			<attach type="ModelRef" name="Turret_LD" tobone="socketbone_cannon" frombone="GrannyRootBone_cannon" syncanims="true" disregardorient="false" removeimmediately="false" />
+		</component>
+	</model>
+	<model name="turret_LD">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/structure/turret_antivehicle_gun01/deployed/mesh_turret_0</file>
+				<damagefile>units/unsc/structure/turret_antivehicle_gun01/deployed/antivehicle_turret</damagefile>
+			</asset>
+			<attach type="ModelRef" name="turret_addon" tobone="GranRootBone" frombone="GrannyRootBone" syncanims="true" disregardorient="false" removeimmediately="false" />
+			<attach type="ModelRef" name="Railgun_LD" tobone="socketbone_cannon_0" frombone="GrannyRootBone_cannon_0" syncanims="true" disregardorient="false" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Attack_LD" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/attack_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/structure/turret_antivehicle_gun01/deployed/idle_01_turret</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="Railgun_LD">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/colossus01/mesh_rail_gun_base_0</file>
+				<damagefile>dlc3/pack1/units/unsc/vehicles/colossus01/rail_gun</damagefile>
+			</asset>
+		</component>
+		<anim type="Attack_LD" exitAction="Transition" tweenTime="10" tweenToAnimation="CombatIdle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_attack02_rail_gun</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.0839999989" end="1" name="vfx/dlc3/Units/ColossusRailGunMuzzle" tobone="bone_vfx_RailGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="16.0799999" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Attack" start="0" position_type="Time" position="0.0839999989" end="1" tobone="bone_vfx_RailGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.0839999989" end="1" name="PLAY_SFX_3D_WPN_UNSC_ColossusRailgunFire" tobone="bone_vfx_RailGunMuzzle" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Sound" start="0" position_type="Time" position="0.12" end="1" name="PLAY_SFX_3D_FLY_UNSC_SpartanRailGunReload" tobone="GrannyRootBone_battle_apc" checkvisible="false" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="0.25" loop="false" checkSelected="false" checkFOW="false" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+			<attach type="ParticleFile" name="vfx/dlc3/Units/ColossusRailGunCharge" tobone="b_railgun_0" syncanims="false" disregardorient="false" removeimmediately="true" />
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_walk_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="JogIdle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_walk_to_idle_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="IdleJog" exitAction="Transition" tweenTime="5" tweenToAnimation="Jog" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_idle_to_walk_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Jog" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_walk_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="CombatIdle" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_combat_idle02_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Cower" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_idle02_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/spartan_hijack_colossus_loop_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/spartan_hijack_colossus_in_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Death" exitAction="Freeze" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_death01_rail_gun</file>
+				<weight>1</weight>
+				<tag type="Particle" start="0" position_type="Time" position="0.0260000005" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="b_root" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.159999996" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="b_arm_right_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.32100001" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionMedium" tobone="b_body_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+				<tag type="Particle" start="0" position_type="Time" position="0.691999972" end="1" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/UNSCAirExplosionSmall" tobone="b_arm_twist_left_0" checkvisible="true" lockToGround="false" attach="false" disregardorient="false" removeimmediately="false" force="0" force2="0" lifespan="3.29999995" loop="false" checkSelected="false" checkFOW="true" playInReverse="false" fadeInTime="0.25" fadeOutTime="0.25" translationStrength="1" translationFrequency="5" yawPitchStrength="1" rollStrength="1" rotationFrequency="5" />
+			</asset>
+		</anim>
+		<anim type="Stunned" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_stunned_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+			<attach type="ParticleFile" name="vfx/UnitVFX/SharedUnitVFX/SharedUnitDestructionVFX/MediumElectricalArc" tobone="bone_vfx_StunElecPoint1" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="10" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_walk_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Idle" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_idle01_rail_gun</file>
+				<weight>3</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_idle02_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>dlc3/pack1/animations/unsc/vehicles/colossus01/colossus_idle03_rail_gun</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="scorp">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units\unsc\vehicles\scorpion01\mesh_scorpion01</file>
+			</asset>
+		</component>
+	</model>
+	<model name="track_fl">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units\unsc\vehicles\grizzly01\mesh_track_fl</file>
+			</asset>
+		</component>
+	</model>
+	<model name="track_fr">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units\unsc\vehicles\grizzly01\mesh_track_fr</file>
+			</asset>
+		</component>
+	</model>
+	<model name="forkleft">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/vehicles/jackrabbit01/mesh_forkleft_0</file>
+				<damagefile>units/unsc/vehicles/jackrabbit01/fork_left</damagefile>
+			</asset>
+			<attach type="LightFile" name="Lights/Headlight" tobone="bone_vfx_HeadlightLeft" syncanims="false" disregardorient="true" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="1" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkleft</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle02_forkleft</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle03_forkleft</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle04_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/run01_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/run01_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TurretWeaponAttack" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_fire_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/spartan_hijack_jackrabbit_forkleft_loop</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/spartan_hijack_jackrabbit_forkleft_in</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="forkright">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/vehicles/jackrabbit01/mesh_forkright_0</file>
+				<damagefile>units/unsc/vehicles/jackrabbit01/fork_right</damagefile>
+			</asset>
+			<attach type="LightFile" name="Lights/Headlight" tobone="bone_vfx_HeadlightRight" syncanims="false" disregardorient="true" removeimmediately="false" />
+		</component>
+		<anim type="Idle" exitAction="Transition" tweenTime="1" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkright</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle02_forkright</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle03_forkright</file>
+				<weight>1</weight>
+			</asset>
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle04_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Walk" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/run01_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Run" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/run01_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Gather" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Build" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="TurretWeaponAttack" exitAction="Transition" tweenTime="10" tweenToAnimation="Idle" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_fire_forkright</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="Train" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/idle_forkleft</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackLoop" exitAction="Loop" tweenTime="0" tweenToAnimation="" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/spartan_hijack_jackrabbit_forkright_loop</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+		<anim type="HijackIn" exitAction="Transition" tweenTime="0" tweenToAnimation="HijackLoop" uvScrollSpeedX="0" uvScrollSpeedY="0">
+			<asset type="Anim">
+				<file>animations/unsc/vehicles/jackrabbit01/spartan_hijack_jackrabbit_forkright_in</file>
+				<weight>1</weight>
+			</asset>
+		</anim>
+	</model>
+	<model name="armleft">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_left_0</file>
+			</asset>
+		</component>
+	</model>
+	<model name="armright">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>dlc3/pack1/units/unsc/vehicles/mantis01/mesh_hand_right_0</file>
+			</asset>
+			<attach type="LightFile" name="Lights/Headlight" tobone="rootbone" syncanims="false" disregardorient="false" removeimmediately="false" />
+		</component>
+	</model>
+	<model name="decor_turret">
+		<component>
+			<asset type="Model">
+				<uvOffset channel="0" uOfs="0" vOfs="0" />
+				<uvOffset channel="1" uOfs="0" vOfs="0" />
+				<uvOffset channel="2" uOfs="0" vOfs="0" />
+				<file>units/unsc/structure/turret_standard_gun01/deployed/mesh_turret_0</file>
+			</asset>
+		</component>
+	</model>
+	<logic type="SquadMode">
+		<logicdata value="Lockdown" modelref="Lockdown" weight="1" />
+		<logicdata value="Normal" modelref="battle_apc" weight="1" />
+	</logic>
+</visual>

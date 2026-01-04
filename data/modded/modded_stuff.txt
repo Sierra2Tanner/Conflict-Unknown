@@ -1,0 +1,4 @@
+data\modded\
+data\ui\ui_common_resident
+data\db\text\english\uient.xml and localization
+data\textures\bespoke\units\forerunner\aerial\retriever\

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<TacticData>
+	<Weapon>
+		<Name>LightCannon1</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>350</DamagePerSecond>
+		<WeaponType>Basic</WeaponType>
+		<Projectile>fx_proj_machinegun_01</Projectile>
+		<ImpactEffect size="Small">MediumBallisticImpact</ImpactEffect>
+		<MaxVelocityLead>18.4500008</MaxVelocityLead>
+		<MaxRange>85</MaxRange>
+		<Accuracy>0.100000001</Accuracy>
+		<MaxDeviation>1.5</MaxDeviation>
+		<MovingAccuracy>0</MovingAccuracy>
+		<MovingMaxDeviation>1.5</MovingMaxDeviation>
+		<EnableHeightBonusDamage />
+		<Hardpoint>Turret</Hardpoint>
+		<TargetPriority type="Infantry">4</TargetPriority>
+		<TargetPriority type="GroundVehicle">4</TargetPriority>
+		<TargetPriority type="Aircraft">4</TargetPriority>
+		<TargetPriority type="Turretbuilding">1</TargetPriority>
+		<TargetPriority type="building">1</TargetPriority>
+		<UseGroupRange />
+		<PreAttackCooldownMin>0</PreAttackCooldownMin>
+		<PreAttackCooldownMax>0.200000003</PreAttackCooldownMax>
+		<PostAttackCooldownMin>0</PostAttackCooldownMin>
+		<PostAttackCooldownMax>0.600000024</PostAttackCooldownMax>
+	</Weapon>
+	<Weapon>
+		<Name>Machinegun</Name>
+		<AttackRate>0.25</AttackRate>
+		<DamagePerSecond>80</DamagePerSecond>
+		<WeaponType>SmallArms</WeaponType>
+		<Projectile>fx_proj_machinegun_01</Projectile>
+		<ImpactEffect size="Small">MediumBallisticImpact</ImpactEffect>
+		<MaxVelocityLead>27.6749992</MaxVelocityLead>
+		<MaxRange>45</MaxRange>
+		<Accuracy>0.100000001</Accuracy>
+		<MaxDeviation>1.5</MaxDeviation>
+		<MovingAccuracy>0.100000001</MovingAccuracy>
+		<MovingMaxDeviation>2</MovingMaxDeviation>
+		<EnableHeightBonusDamage />
+		<Hardpoint>MG1</Hardpoint>
+		<TargetPriority type="PaintTarget">10</TargetPriority>
+		<TargetPriority type="Infantry">3</TargetPriority>
+		<TargetPriority type="Aircraft">3</TargetPriority>
+		<TargetPriority type="GroundVehicle">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<PreAttackCooldownMin>0</PreAttackCooldownMin>
+		<PreAttackCooldownMax>0.300000012</PreAttackCooldownMax>
+		<PostAttackCooldownMin>1</PostAttackCooldownMin>
+		<PostAttackCooldownMax>1.70000005</PostAttackCooldownMax>
+	</Weapon>
+	<Weapon>
+		<Name>fr_Cannon01</Name>
+		<AttackRate>3</AttackRate>
+		<DamagePerSecond>200</DamagePerSecond>
+		<WeaponType>ScorpionExplosive</WeaponType>
+		<Projectile>fx_proj_cannon_03</Projectile>
+		<ImpactEffect size="Medium" alwaysHorizontal="true">MediumAirExplosion</ImpactEffect>
+		<MaxVelocityLead>12.3000002</MaxVelocityLead>
+		<MaxRange>50</MaxRange>
+		<Accuracy>1</Accuracy>
+		<MaxDeviation>4</MaxDeviation>
+		<MovingAccuracy>1</MovingAccuracy>
+		<MovingMaxDeviation>8</MovingMaxDeviation>
+		<EnableHeightBonusDamage />
+		<AOEData>
+			<Hitbox>
+				<Type>Circle</Type>
+				<Radius>4</Radius>
+				<DamageRatio>100</DamageRatio>
+				<Origin>Target</Origin>
+				<FriendlyFire>false</FriendlyFire>
+			</Hitbox>
+			<Hitbox>
+				<Type>Circle</Type>
+				<Radius>6</Radius>
+				<DamageRatio>40</DamageRatio>
+				<Origin>Target</Origin>
+				<FriendlyFire>false</FriendlyFire>
+			</Hitbox>
+		</AOEData>
+		<Hardpoint>frontcannon1</Hardpoint>
+		<ThrowUnits />
+		<PhysicsLaunchAngleMin>5</PhysicsLaunchAngleMin>
+		<PhysicsLaunchAngleMax>15</PhysicsLaunchAngleMax>
+		<PhysicsForceMin>800</PhysicsForceMin>
+		<PhysicsForceMax>1200</PhysicsForceMax>
+		<PhysicsForceMaxAngle>0.800000012</PhysicsForceMaxAngle>
+		<TargetPriority type="PaintTarget">10</TargetPriority>
+		<TargetPriority type="GroundVehicle">6</TargetPriority>
+		<TargetPriority type="TurretBuilding">5</TargetPriority>
+		<TargetPriority type="Infantry">3</TargetPriority>
+		<TargetPriority type="Building">1</TargetPriority>
+		<TargetPriority type="Flying">-1</TargetPriority>
+		<Filter>Heavy</Filter>
+	</Weapon>
+	<Weapon>
+		<Name>SelfPlacedHealingBeacon</Name>
+		<AttackRate>0.5</AttackRate>
+		<DamagePerSecond>0</DamagePerSecond>
+		<WeaponType>Explosive</WeaponType>
+		<Projectile>fx_proj_bomb_01</Projectile>
+		<ImpactEffect size="Small">fuelrod_01</ImpactEffect>
+		<Mine>unsc_mine_buildercondor_beacon_01</Mine>
+		<AlwaysReplaceTargetWithItsPosition />
+		<MaxRange>10</MaxRange>
+		<MaxPlantRange>9</MaxPlantRange>
+	</Weapon>
+	<Action>
+		<Name>LightCannon1AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>Attack</Anim>
+		<Weapon>LightCannon1</Weapon>
+		<Strafing maxDistance="15" turnRate="90" trackingSpeed="40" jitter="20" />
+		<PersistBetweenOpps />
+	</Action>
+	<Action>
+		<Name>MachinegunAttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim SoundLoopStartEvent="PLAY_SFX_3D_WPN_UNSC_FoxcannonMachineGun" SoundLoopEndEvent="STOP_SFX_3D_WPN_UNSC_FoxcannonMachineGun">MG1Attack</Anim>
+		<Weapon>Machinegun</Weapon>
+		<Strafing maxDistance="45" turnRate="360" trackingSpeed="40" jitter="20" />
+	</Action>
+	<Action>
+		<Name>Cannon01AttackAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>CannonAttackLeft</Anim>
+		<Weapon>fr_Cannon01</Weapon>
+		<ForceAttachmentAnim />
+		<CanOrientOwner>true</CanOrientOwner>
+	</Action>
+	<Action>
+		<Name>Garrison</Name>
+		<ActionType>Garrison</ActionType>
+		<WorkRange>3.07500005</WorkRange>
+	</Action>
+	<Action>
+		<Name>GarrisonPelican</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>PelicanGarrison</Anim>
+		<WorkRange>8.61000061</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonPelican</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>PelicanUngarrison</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>LockdownMove</Name>
+		<ActionType>Move</ActionType>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>Unlock</Name>
+		<ActionType>ChangeMode</ActionType>
+		<SquadMode>Normal</SquadMode>
+	</Action>
+	<Action>
+		<Name>PlaceBeaconAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>BeaconDeploy</Anim>
+		<Weapon>PlacedHealingBeacon</Weapon>
+		<FullBodyAttackAnim />
+		<DontAutoRestart />
+		<SquadMode>LockDown</SquadMode>
+	</Action>
+	<Action>
+		<Name>SelfPlaceBeaconAction</Name>
+		<ActionType>RangedAttack</ActionType>
+		<Anim>BeaconDeploy</Anim>
+		<Weapon>SelfPlacedHealingBeacon</Weapon>
+		<FullBodyAttackAnim />
+		<DontAutoRestart />
+		<SquadMode>LockDown</SquadMode>
+	</Action>
+	<Action>
+		<Name>GarrisonTeleport</Name>
+		<ActionType>Garrison</ActionType>
+		<Anim>TeleportOut</Anim>
+		<WorkRange>9.22500038</WorkRange>
+	</Action>
+	<Action>
+		<Name>UngarrisonTeleport</Name>
+		<ActionType>Ungarrison</ActionType>
+		<Anim>TeleportIn</Anim>
+		<WorkRange>0</WorkRange>
+	</Action>
+	<Action>
+		<Name>Deflect</Name>
+		<ActionType>Deflect</ActionType>
+		<DeflectChanceMin>0.5</DeflectChanceMin>
+		<DeflectChanceMax>0.5</DeflectChanceMax>
+		<DeflectMaxAngle>180</DeflectMaxAngle>
+		<DeflectCooldown>0</DeflectCooldown>
+		<MultiDeflect />
+	</Action>
+	<Action>
+		<Name>GatherCollectables</Name>
+		<ActionType>Gather</ActionType>
+		<Anim>Gather</Anim>
+		<Resource>Collectable</Resource>
+		<WorkRate>1</WorkRate>
+		<WorkRange>4</WorkRange>
+	</Action>
+	<Tactic>
+		<PersistentAction>Deflect</PersistentAction>
+		<PersistentAction>MachinegunAttackAction</PersistentAction>
+		<PersistentAction>Cannon01AttackAction</PersistentAction>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>LightCannon1AttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>MachinegunAttackAction</Action>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Enemy</Relation>
+			<Action>Cannon01AttackAction</Action>
+			<TargetType>NonFlying</TargetType>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<TargetType>Collectable</TargetType>
+			<Action>GatherCollectables</Action>
+		</TargetRule>
+		<TargetRule>
+		    <Ability>Command</Ability>
+			<Relation>Self</Relation>
+			<Action>Unlock</Action>
+			<SquadMode>LockDown</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<TargetsGround />
+			<Action>LockdownMove</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Relation>Self</Relation>
+			<Action>LockdownMove</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Relation>Ally</Relation>
+			<Action>PlaceBeaconAction</Action>
+			<SquadMode>LockDown</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<TargetsGround />
+			<Action>PlaceBeaconAction</Action>
+			<SquadMode>LockDown</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Relation>Self</Relation>
+			<Action>SelfPlaceBeaconAction</Action>
+			<SquadMode>LockDown</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Command</Ability>
+			<Relation>Enemy</Relation>
+			<Action>SelfPlaceBeaconAction</Action>
+			<SquadMode>LockDown</SquadMode>
+		</TargetRule>
+		<TargetRule>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>GarrisonPelican</Action>
+		</TargetRule>
+		<TargetRule>
+			<Ability>Ungarrison</Ability>
+			<Relation>Ally</Relation>
+			<TargetType>transport</TargetType>
+			<Action>UngarrisonPelican</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Relation>Self</Relation>
+			<TargetType>TeleportPickup</TargetType>
+			<Action>GarrisonTeleport</Action>
+		</TargetRule>
+		<TargetRule>
+			<GaiaOwned />
+			<Ability>Ungarrison</Ability>
+			<Relation>Self</Relation>
+			<TargetType>TeleportDropoff</TargetType>
+			<Action>UngarrisonTeleport</Action>
+		</TargetRule>
+	</Tactic>
+</TacticData>
